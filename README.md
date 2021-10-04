@@ -54,4 +54,20 @@ Fetch data from API
 Create HTML file
 Create CSS file
 
+----------------------------------------------------------------
+
+Styling Ideas:
+
+Possible Fonts:
+
+Title Font
+Dafont.com:
+Lemon Milk
+The Next Font
+
+Text Fonts
+Dafont.com:
+Geliat
+Biko
+Coco Gothic
 
