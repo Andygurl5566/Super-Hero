@@ -1,5 +1,5 @@
 #header {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 #header h1 {
@@ -26,16 +26,15 @@
 #hero-image {
     border-style: solid;
     position: relative;
-    height: 400px;
+    height: 300px;
     
 }
 
 #stat-box {
     border-style: solid;
-    position: relative;
     width: 200px;
-    height: 400px;
-    float:right;
+    height:300px;
+    float: right;
    
     
 }
@@ -51,12 +50,26 @@
 
 
 #bio-box {
-    background-position: center;
+  
+    border-style: solid;
+
+
+}
+
+#bio-box h3 {
+    text-align: left;
+}
+
+#bio-box p {
+    text-align: left;
+    
+    
 }
 
 #button-section {
     padding-left: 250px;
     padding-right: 250px;
+    padding-top: 15px;
 
 }
 
@@ -64,5 +77,6 @@
   
    padding-left: 250px;
    padding-right: 250px;
+   
 
 }
