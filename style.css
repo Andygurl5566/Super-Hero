@@ -20,15 +20,22 @@
 #middle-section{
     padding-left: 250px;
     padding-right: 250px;
+    position: relative;
 }
 
 #hero-image {
     border-style: solid;
+    position: relative;
+    height: 400px;
     
 }
 
 #stat-box {
     border-style: solid;
+    position: relative;
+    width: 200px;
+    height: 400px;
+    float:right;
    
     
 }
