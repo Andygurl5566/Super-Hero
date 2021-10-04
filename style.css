@@ -1,0 +1,43 @@
+#middle-section{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#hero-image {
+    border-style: solid;
+    
+}
+
+#stat-box {
+    border-style: solid;
+   
+    
+}
+
+#stat-box h3 {
+    text-align: center;
+}
+
+
+#stat-box ul {
+    text-align: left; 
+}
+
+
+#bio-box {
+
+    background-position: center;
+}
+
+#button-section{
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+#comment-section {
+  
+   padding-left: 250px;
+   padding-right: 250px;
+
+}
