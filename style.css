@@ -1,3 +1,22 @@
+#header {
+    padding-top: 50px;
+}
+
+#header h1 {
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+ 
+ 
+#header h2 {
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+ 
+
+
 #middle-section{
     padding-left: 250px;
     padding-right: 250px;
@@ -25,11 +44,10 @@
 
 
 #bio-box {
-
     background-position: center;
 }
 
-#button-section{
+#button-section {
     padding-left: 250px;
     padding-right: 250px;
 
