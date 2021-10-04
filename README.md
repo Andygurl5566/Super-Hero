@@ -1,6 +1,7 @@
 # Super-Hero
 Push updates:
 
+For document changes :
 git add .
 git commit -m "message"
 git push
@@ -62,8 +63,9 @@ Possible Fonts:
 
 Title Font
 Dafont.com:
-Lemon Milk
-The Next Font
+Lemon Milk (bold large font)
+The Next Font (bold large font)
+Dead Revolution (more stylized bold large font)
 
 Text Fonts
 Dafont.com:
