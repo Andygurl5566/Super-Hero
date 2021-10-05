@@ -1,12 +1,21 @@
 
 #header {
-    padding-top: 0px;
+   
+   padding-left:300px;
+  
+   padding-right: 300px;
+   display: block;
+   min-width: 400px;
+   
+    
 }
 
 #header h1 {
-    padding-left: 270px;
+    padding-left: 250px;
     padding-right: 250px;
     text-align: center;
+    min-width: 400px;
+
 }
  
  
@@ -14,42 +23,63 @@
     padding-left: 250px;
     padding-right: 250px;
     text-align: center;
+    min-width: 400px;
+}
+
+#search-box {
+    padding-left: 250px;
+    padding-right: 250px;
+    min-width: 400px;
 }
  
 
 
 #middle-section{
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 400px;
+    padding-right: 400px;
+    display: inline-block;
+    width: 700px;
+   
    
 }
 
 #hero-image {
     border-style: solid;
     height: 300px;
-    position:relative;
-    width: 680px;
+
+
 }
 
 #stat-box {
     border-style: solid;
     height:300px;
     float: right;
-    width: 30%;
-    
+    width: 30%; 
+    min-width: 200px;
+
    
-    
+      
 }
 
 #stat-box h3 {
     text-align: center;
+   
+    
 }
 
 
 #stat-box ul {
     text-align: left; 
+   
 }
 
+#stat-box li {
+    text-align: left; 
+    padding:5px;
+    padding-left: 50px;
+
+    
+}
 
 #bio-box {
   padding-left: 15px;
@@ -70,7 +100,7 @@ clear:both;
 }
 
 #button-section {
-    padding-left: 250px;
+    padding-left: 400px;
     padding-right: 250px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -78,7 +108,7 @@ clear:both;
 
 #comment-section {
   
-   padding-left: 250px;
+    padding-left: 400px;
    padding-right: 250px;
    position: relative;
    
