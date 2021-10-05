@@ -1,12 +1,21 @@
 
 #header {
-    padding-top: 0px;
+   
+   padding-left:300px;
+  
+   padding-right: 300px;
+   display: block;
+   min-width: 400px;
+   
+    
 }
 
 #header h1 {
-    padding-left: 270px;
+    padding-left: 250px;
     padding-right: 250px;
     text-align: center;
+    min-width: 400px;
+
 }
  
  
@@ -14,46 +23,71 @@
     padding-left: 250px;
     padding-right: 250px;
     text-align: center;
+    min-width: 400px;
+}
+
+#search-box {
+    padding-left: 250px;
+    padding-right: 250px;
+    min-width: 400px;
 }
  
 
 
 #middle-section{
-    padding-left: 250px;
-    padding-right: 250px;
-    position: relative;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: inline-block;
+    width: 700px;
+   
+   
 }
 
 #hero-image {
     border-style: solid;
-    position: relative;
     height: 300px;
-    
+    background-color: black;
+    align-content: center;
+
+
 }
 
 #stat-box {
     border-style: solid;
-   
-    width: 200px;
     height:300px;
     float: right;
+    width: 30%; 
+    min-width: 200px;
+    background-color: white;
+
    
-    
+      
 }
 
 #stat-box h3 {
     text-align: center;
+   
+    
 }
 
 
 #stat-box ul {
     text-align: left; 
+   
 }
 
+#stat-box li {
+    text-align: left; 
+    padding:5px;
+    padding-left: 50px;
+
+    
+}
 
 #bio-box {
   padding-left: 15px;
 border-style: solid;
+clear:both;
 
 
 }
@@ -69,21 +103,32 @@ border-style: solid;
 }
 
 #button-section {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 30%;
+    padding-right: 40%;
     padding-top: 15px;
     padding-bottom: 15px;
+    outline: none;
+}
+
+#button-section type {
+   outline: none;
 }
 
 #comment-section {
   
-   padding-left: 250px;
-   padding-right: 250px;
+    padding-left: 30%;
+    padding-right: 40%;
    position: relative;
    
 
 }
 
 #search-box {
-    text-align: center;
+   
+}
+
+img#placeholder-image {
+    
+    max-height:100%; 
+    max-width:100%;
 }
