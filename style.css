@@ -27,10 +27,8 @@
 #hero-image {
     border-style: solid;
     height: 300px;
-    position:fixed;
-    width: 50%;
-
-    
+    position:relative;
+    width: 680px;
 }
 
 #stat-box {
@@ -89,4 +87,10 @@ clear:both;
 
 #search-box {
     text-align: center;
+}
+
+img#placeholder-image {
+    
+    max-height:100%; 
+    max-width:100%;
 }
