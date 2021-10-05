@@ -1,9 +1,10 @@
+
 #header {
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 #header h1 {
-    padding-left: 250px;
+    padding-left: 270px;
     padding-right: 250px;
     text-align: center;
 }
@@ -32,6 +33,7 @@
 
 #stat-box {
     border-style: solid;
+   
     width: 200px;
     height:300px;
     float: right;
@@ -50,8 +52,8 @@
 
 
 #bio-box {
-  
-    border-style: solid;
+  padding-left: 15px;
+border-style: solid;
 
 
 }
@@ -70,13 +72,14 @@
     padding-left: 250px;
     padding-right: 250px;
     padding-top: 15px;
-
+    padding-bottom: 15px;
 }
 
 #comment-section {
   
    padding-left: 250px;
    padding-right: 250px;
+   position: relative;
    
 
 }
