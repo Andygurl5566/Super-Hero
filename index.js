@@ -82,7 +82,7 @@ function handleLikeandDislikeButton(){
 
     let dislikes = document.querySelector("#dislike-amount")
 
-    dislikes.innerTML = ""
+    dislikes.innerHTML = ""
 
 
     let num1 = 0
