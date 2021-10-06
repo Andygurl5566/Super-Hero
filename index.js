@@ -20,6 +20,9 @@ function searchSuperhero(e){
             addBio(element)
             handleLikeandDislikeButton() //added by Andrea
             handleStats(element)
+            handleComments()
+            
+           
 
                 
             
@@ -27,16 +30,24 @@ function searchSuperhero(e){
     heroForm.reset()
 }
 
+// function commentForEachHero(element){
+//     for (let element in elements){
+//         handleComments(element)
+//     }
+// }
+
+
 function handleStats(element){
-for (let singleStats in element.results[0].powerstats)
-    {
-        console.log(singleStats, element.results[0].powerstats[singleStats])
-        const stats = document.getElementById('stat-box');
-        const newStats = document.createElement('li')
-        newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
-        stats.append(newStats)
-     }
-}
+    const stats = document.getElementById('stat-box');
+    stats.innerHTML = " <h3> Stats: </h3> "
+    for (let singleStats in element.results[0].powerstats)
+        {
+            // console.log(singleStats, element.results[0].powerstats[singleStats])
+            const newStats = document.createElement('li')
+            newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
+            stats.append(newStats)
+         }
+    }
                 
 
 
@@ -122,17 +133,34 @@ function handleLikeandDislikeButton(){
 
 // comments
 
-let commentBar = document.getElementById("commentBar")
 
-commentBar.addEventListener("submit", (e)=>{
-    e.preventDefault()
-    console.log("hi")
-    let commentContainer = {}
 
-    console.log(e.target.comment.value)
-    commentBar.reset()
+function handleComments(element){
+    const form = document.getElementById("commentBar")
+    const commentArea = document.getElementById("comment-container") //where comments will show up
+    const newLi = document.createElement("li") ///each comment will append to a new li
+    
+        form.addEventListener("submit", (e)=>{
+
+            e.preventDefault()
+            console.log("form event works")
+
+           
+            newLi.innerHTML = e.target.comment.value // grabs inputed text and attaches it to li
+            commentArea.append(newLi)
+
+             form.reset()
+
+        })
+        
+        
 }
-)
+
+
+
+
+
+
 
 
 // form.addEventListener("submit", (e)=> {  
