@@ -1,6 +1,9 @@
 
-const heroForm = document.getElementById('hero-form')
-heroForm.addEventListener('submit', searchSuperhero)
+ document.addEventListener('DOMContentLoaded', () => {
+    const heroForm = document.getElementById('hero-form')
+    heroForm.addEventListener('submit', searchSuperhero)
+  });
+
 
 function searchSuperhero(e){
 
@@ -20,8 +23,9 @@ function searchSuperhero(e){
             addBio(element)
             handleLikeandDislikeButton() //added by Andrea
             handleStats(element)
-            handleComments(element)
-            
+            //handleComments(element)
+            document.getElementById('comment-container').innerHTML = ""
+           
            
 
                 
@@ -134,46 +138,20 @@ function handleLikeandDislikeButton(){
 
 // comments
 
+const commentArea = document.getElementById("commentBar")
+commentArea.addEventListener("submit", handleComments)
 
-
-function handleComments(element){
-    
-    const form = document.getElementById("commentBar")
-    const heroName = element.results[0].name
-    const commentArea = document.getElementById("comment-container") //where comments will show up
-    commentArea.innerHTML = ""
-    
-        form.addEventListener("submit", (e)=>{
-
-                e.preventDefault()
-                console.log("form event works")
-
-                
-                const newLi = document.createElement("li") ///each comment will append to a new li
-               
-                // newLi.innerHTML = `${heroName} fans are saying:  ${e.target.comment.value}` //get this to reset for each hero
-                newLi.textContent = e.target.comment.value //get this to reset for each hero
-
-                commentArea.append(newLi)
-
-                form.reset()
-        
-        })
-        
-        
+function handleComments(e){
+    e.preventDefault()
+    // const heroName = element.results[0].name
+    // commentArea.innerHTML = ""
+    const commentContainer = document.getElementById('comment-container')
+    const newLi = document.createElement("li") ///each comment will append to a new li
+    newLi.textContent = e.target.comment.value //get this to reset for each hero
+    commentContainer.append(newLi)
+    e.target.reset()
+    // newLi.innerHTML = `${heroName} fans are saying:  ${e.target.comment.value}` //get this to reset for each hero
 }
-
-
-// const stats = document.getElementById('stat-box');
-//     stats.innerHTML = " <h3> Stats: </h3> "
-//     for (let singleStats in element.results[0].powerstats)
-//         {
-//             // console.log(singleStats, element.results[0].powerstats[singleStats])
-//             const newStats = document.createElement('li')
-//             newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
-//             stats.append(newStats)
-
-
 
 
 

@@ -27,9 +27,11 @@
 }
 
 #search-box {
-    padding-left: 250px;
+    /* padding-left: 250px;
     padding-right: 250px;
     min-width: 400px;
+    align-content: center; */
+    
 }
  
 
@@ -38,17 +40,16 @@
     padding-left: 30%;
     padding-right: 30%;
     display: inline-block;
-    width: 700px;
+    width: 600px;
    
    
 }
 
 #hero-image {
-    border-style: solid;
-    height: 300px;
-    background-color: black;
-    align-content: center;
 
+    height:310px;
+    text-align: center;
+    background-color: black;
 
 }
 
@@ -85,7 +86,7 @@
 }
 
 #bio-box {
-  padding-left: 15px;
+padding-left: 15px;
 border-style: solid;
 clear:both;
 
@@ -106,7 +107,7 @@ clear:both;
     padding-left: 30%;
     padding-right: 40%;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     outline: none;
 }
 
@@ -118,13 +119,13 @@ clear:both;
   
     padding-left: 30%;
     padding-right: 40%;
-   position: relative;
+    position: relative;
    
 
 }
 
 #search-box {
-   
+   width: 400px; 
 }
 
 img#placeholder-image {
@@ -143,4 +144,8 @@ img#placeholder-image {
 
     font-size: large;
     position: relative;
+}
+
+#commentBar {
+    width: 400px;  
 }
