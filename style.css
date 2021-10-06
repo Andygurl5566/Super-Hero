@@ -134,7 +134,13 @@ img#placeholder-image {
 }
 
 #likes-amount {
-    float:right;
+
+    font-size: large;
+    position: relative;
+}
+
+#dislike-amount {
+
     font-size: large;
     position: relative;
 }

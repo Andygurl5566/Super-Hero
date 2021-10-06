@@ -78,9 +78,15 @@ function handleLikeandDislikeButton(){
 
     let likesNumber = document.querySelector("#likes-amount")
 
-    likesNumber.innerHTML = "0"
+    likesNumber.innerHTML = ""
 
-    let num = 0
+    let dislikes = document.querySelector("#dislike-amount")
+
+    dislikes.innerTML = ""
+
+
+    let num1 = 0
+    let num2 = 0
 
     let buttonDiv = document.querySelector("#button-section")
 
@@ -93,30 +99,45 @@ function handleLikeandDislikeButton(){
 
     likeButton.addEventListener("click", function (){
         console.log("click")
-        likesNumber.innerHTML = ++num
+        likesNumber.innerHTML = `This hero has ${++num1} fans` //or could say current Hero ranking
     })
 
 
     dislikeButton.addEventListener("click", function (){
         console.log("click")
-        likesNumber.innerHTML = --num
+        dislikes.innerHTML = `This hero has ${++num2} foes`
     })
     
+
 }
 
 // comments
 
 let commentBar = document.getElementById("commentBar")
 
-commentBar.addEventListener("submit", function(e){
+commentBar.addEventListener("submit", (e)=>{
     e.preventDefault()
     console.log("hi")
     let commentContainer = {}
 
-    console.log(e.target)
+    console.log(e.target.comment.value)
     commentBar.reset()
 }
 )
+
+
+// form.addEventListener("submit", (e)=> {  
+//     e.preventDefault()
+//     console.log(e.target.comment.value)
+//     let newPost = e.target.comment.value
+
+//     newLi = document.createElement("li")
+//     newLi.textContent = newPost
+//     let ul = document.getElementById("comments-list")
+//     ul.append(newLi)
+
+//     form.reset()
+// })
 
 
 
