@@ -18,20 +18,28 @@ function searchSuperhero(e){
             addImage(element)
             changeName(element)
             addBio(element)
-            for (let singleStats in element.results[0].powerstats)
-            {
-                console.log(singleStats, element.results[0].powerstats[singleStats])
-                const stats = document.getElementById('stat-box');
-                const newStats = document.createElement('li')
-                newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
-                stats.append(newStats)
+            handleLikeandDislikeButton() //added by Andrea
+            handleStats(element)
 
-                handleLikeandDislikeButton() //added by Andrea
                 
-            }
+            
         })
     heroForm.reset()
 }
+
+function handleStats(element){
+for (let singleStats in element.results[0].powerstats)
+    {
+        console.log(singleStats, element.results[0].powerstats[singleStats])
+        const stats = document.getElementById('stat-box');
+        const newStats = document.createElement('li')
+        newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
+        stats.append(newStats)
+     }
+}
+                
+
+
 
 function addImage(element){
     const imageContainer = document.getElementById("placeholder-image")
@@ -105,7 +113,8 @@ function handleLikeandDislikeButton(){
 
     dislikeButton.addEventListener("click", function (){
         console.log("click")
-        dislikes.innerHTML = `This hero has ${++num2} foes`
+        
+        dislikes.innerHTML = `This hero has ${++num2} foes`  //add else if for fan vs fans
     })
     
 
