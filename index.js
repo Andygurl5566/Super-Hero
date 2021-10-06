@@ -25,6 +25,8 @@ function searchSuperhero(e){
                 const newStats = document.createElement('li')
                 newStats.textContent = `${singleStats}: ${element.results[0].powerstats[singleStats]}`
                 stats.append(newStats)
+
+                handleLikeandDislikeButton() //added by Andrea
                 
             }
         })
@@ -50,7 +52,7 @@ function addBio (element) {
     const firstAppearance = element.results[0].biography["first-appearance"]
     bioContainer.textContent = `This hero also goes by ${aliases}. 
         They first appear in ${firstAppearance}. This hero is published by 
-        ${publisher}`
+        ${publisher}.`
     console.log(bioContainer)
 }
 
@@ -69,4 +71,57 @@ function addBio (element) {
 // searchBar.addEventListener(document.addEventListener("submit", searchbarInput))
 
 //-----------------------------------------------------------------------------------------
+
+//Like Buttons - Hero's name has been liked # times - make likes for each hero
+
+function handleLikeandDislikeButton(){
+
+    let likesNumber = document.querySelector("#likes-amount")
+
+    likesNumber.innerHTML = "0"
+
+    let num = 0
+
+    let buttonDiv = document.querySelector("#button-section")
+
+    let buttons = buttonDiv.getElementsByTagName("button")
+
+    let likeButton = buttons[0]
+
+    let dislikeButton = buttons[1]
+
+
+    likeButton.addEventListener("click", function (){
+        console.log("click")
+        likesNumber.innerHTML = ++num
+    })
+
+
+    dislikeButton.addEventListener("click", function (){
+        console.log("click")
+        likesNumber.innerHTML = --num
+    })
+    
+}
+
+// comments
+
+let commentBar = document.getElementById("commentBar")
+
+commentBar.addEventListener("submit", function(e){
+    e.preventDefault()
+    console.log("hi")
+    let commentContainer = {}
+
+    console.log(e.target)
+    commentBar.reset()
+}
+)
+
+
+
+
+
+
+
 

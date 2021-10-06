@@ -132,3 +132,9 @@ img#placeholder-image {
     max-height:100%; 
     max-width:100%;
 }
+
+#likes-amount {
+    float:right;
+    font-size: large;
+    position: relative;
+}
