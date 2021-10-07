@@ -1,5 +1,17 @@
+*{
+   
+    
+}
 
-#header {
+body {
+    background-image: url("assets/marvelbandw.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    
+}
+
+/* #header {
    
    padding-left:300px;
   
@@ -8,6 +20,17 @@
    min-width: 400px;
    
     
+} */
+
+#header {
+   
+    text-align: center;
+    
+}
+
+
+#hero-text {
+    color:white;
 }
 
 #header h1 {
@@ -15,23 +38,25 @@
     padding-right: 250px;
     text-align: center;
     min-width: 400px;
+    color: white;
 
 }
  
  
 #header h2 {
-    padding-left: 250px;
-    padding-right: 250px;
+    
     text-align: center;
     min-width: 400px;
+    color: white;
 }
 
 #search-box {
-    /* padding-left: 250px;
-    padding-right: 250px;
-    min-width: 400px;
-    align-content: center; */
+    color:white;
     
+   padding-left: 500px;
+    align-content: center;
+    text-align: center;
+    position: relative;
 }
  
 
@@ -41,16 +66,21 @@
     padding-right: 30%;
     display: inline-block;
     width: 600px;
+    position: relative;
    
    
 }
 
 #hero-image {
 
-    height:310px;
+    height:305px;
     text-align: center;
     background-color: black;
 
+}
+
+#placeolder-image {
+   text-decoration-color: blanchedalmond;
 }
 
 #stat-box {
@@ -85,10 +115,17 @@
     
 }
 
+#stat-box p {
+    text-align: center;
+}
+
 #bio-box {
 padding-left: 15px;
 border-style: solid;
 clear:both;
+background-color:white;
+color: black;
+
 
 
 }
@@ -109,7 +146,10 @@ clear:both;
     padding-top: 15px;
     padding-bottom: 0px;
     outline: none;
+    color:white;
 }
+
+
 
 #button-section type {
    outline: none;
@@ -120,6 +160,7 @@ clear:both;
     padding-left: 30%;
     padding-right: 40%;
     position: relative;
+    color:white;
    
 
 }

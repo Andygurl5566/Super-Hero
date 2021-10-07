@@ -1,9 +1,8 @@
 
- document.addEventListener('DOMContentLoaded', () => {
-    const heroForm = document.getElementById('hero-form')
-    heroForm.addEventListener('submit', searchSuperhero)
-  });
 
+
+const heroForm = document.getElementById('hero-form')
+heroForm.addEventListener('submit', searchSuperhero)
 
 function searchSuperhero(e){
 
@@ -39,6 +38,9 @@ function searchSuperhero(e){
 //         handleComments(element)
 //     }
 // }
+
+
+
 
 
 function handleStats(element){
